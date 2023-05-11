@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "card": "../../components/card/card",
+    "info": "../../components/info/info",
+    "modal-sheet": "../../components/modal-sheet/modal-sheet"
+  }
+}

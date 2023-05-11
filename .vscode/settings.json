@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[wxml]": {
+    "editor.defaultFormatter": "qiu8310.minapp-vscode"
+  }
+}

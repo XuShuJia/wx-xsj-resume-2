@@ -1,0 +1,16 @@
+{
+  "pages": ["pages/resume/resume"],
+  "usingComponents": {
+    "container": "./components/container/container"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "darkmode": true
+}

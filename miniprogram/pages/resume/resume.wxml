@@ -1,0 +1,100 @@
+<container class="resume">
+  <view class="header">
+    <view class="header-welcome">Hello ~</view>
+    <view class="header-title">许树佳的简历（前端）</view>
+  </view>
+  <view class="content">
+    <card class="content-card" title="个人信息">
+      <view class="text-row">
+        <text class="text-label">姓名：</text>
+        <text>许树佳</text>
+      </view>
+      <view class="text-row">
+        <text class="text-label">性别：</text>
+        <text>男</text>
+      </view>
+      <view class="text-row">
+        <text class="text-label">年龄：</text>
+        <text>26岁</text>
+      </view>
+      <view class="text-row">
+        <text class="text-label">民族：</text>
+        <text>汉族</text>
+      </view>
+      <view class="text-row">
+        <text class="text-label">籍贯：</text>
+        <text>汕头市</text>
+      </view>
+      <view class="text-row">
+        <text class="text-label">学历：</text>
+        <text>大专（计算机）</text>
+      </view>
+      <view class="text-row">
+        <text class="text-label">经验：</text>
+        <text>4年</text>
+      </view>
+    </card>
+    <card class="content-card" title="前端技术">
+      <view class="text-multi-row">4年前端开发，经验丰富。</view>
+      <view class="text-multi-row">熟练掌握 HTML5,CSS3,JS,DOMAPI 等前端基础内容。</view>
+      <view class="text-multi-row">熟悉当下主流开发框架以及周边生态：React,Vue,Electron,小程序。</view>
+      <view class="text-multi-row">
+        熟悉以 React(Hooks) + Less + Typescript + Immer 结合起来的开发模式，并以此开发过大型Web应用。
+      </view>
+      <view class="text-multi-row">
+        熟悉以 Vue(3.0) + Less + Typescript 结合起来的开发模式，以此开发过多个应用，涉及PC以及移动端。
+      </view>
+      <view class="text-multi-row">熟悉 AntDesign,ElementPlus,Vant 等主流第三方组件库。</view>
+      <view class="text-multi-row">开发过多个大型组件，模块。</view>
+      <view class="text-multi-row">熟悉人机交互界面操作逻辑设计。</view>
+      <view class="text-multi-row">对于 Electron，小程序 这些框架有一定的项目经验。</view>
+      <view class="tag-row">
+        <view class="tag">react</view>
+        <view class="tag">react-router-dom</view>
+        <view class="tag">redux-toolkit</view>
+        <view class="tag">immer</view>
+        <view class="tag">typescript</view>
+        <view class="tag">less</view>
+        <view class="tag">ant.design</view>
+        <view class="tag">vue</view>
+        <view class="tag">vue-router</view>
+        <view class="tag">pinia</view>
+        <view class="tag">vite</view>
+        <view class="tag">element-plus</view>
+        <view class="tag">vant</view>
+        <view class="tag">axios</view>
+        <view class="tag">electron</view>
+        <view class="tag">socket.io</view>
+        <view class="tag">小程序</view>
+      </view>
+    </card>
+    <card class="content-card" title="工作经历">
+      <view class="text-row">前端开发 2018.4 - 2023.1</view>
+      <view class="text-row">汕头市众麦网络科技有限公司</view>
+    </card>
+    <card class="content-card" title="项目经历">
+      <info title="进销存系统Web端项目">主要使用 react + ant.design 进行开发。由应用主框架 + 业务模块形成。</info>
+      <info title="ERP系统Web端项目">主要使用 react + ant.design 进行开发。由应用主框架 + 业务模块形成。</info>
+      <info title="ERP移动端项目">主要使用 vue + vantui 开发，是Web端ERP的简化版。</info>
+      <info title="MES客户端项目">
+        该项目是一个 electron 开发的桌面应用，界面使用了 vue + typescript + element-plus 进行开发。
+      </info>
+      <info title="套打打印项目">
+        该项目主要使用 typescript, react, vue, electron, ant.design, socket.io 等技术进行开发，涉及 Web端，移动端，桌面端。由模版设计模块，Web端控制器模块，移动端控制器模块，打印代理服务端模块组成。
+      </info>
+      <info title="应用启动器项目">
+        该项目是一个 electron 开发的桌面应用，用于给公司的Web应用提供稳定的运行环境。界面使用了 vue + typescript 进行开发。
+      </info>
+    </card>
+    <card class="content-card" title="联系方式">
+      <button class="concat-button" bind:tap="handleOpenMyWechatQRCodeModalSheet">我的微信</button>
+      <button class="concat-button" bind:tap="handleTapMyPhoneButton">我的手机</button>
+    </card>
+    <view class="end-text">许树佳的简历 Ver2305</view>
+  </view>
+  <modal-sheet open="{{openMyWechatQRCodeModalSheet}}" title="长按二维码添加微信" okButtonText="关闭" bind:close="handleCloseMyWechatQRCodeModalSheet">
+    <view class="wechat-qrcode">
+      <image show-menu-by-longpress mode="widthFix" src="../../assets/my-wechat-qrcode.jpg" />
+    </view>
+  </modal-sheet>
+</container>

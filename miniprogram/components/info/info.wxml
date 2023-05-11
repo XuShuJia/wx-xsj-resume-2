@@ -1,0 +1,6 @@
+<view class="info">
+  <view class="info-header">• {{ title }}</view>
+  <view class="info-content">
+    <slot></slot>
+  </view>
+</view>
